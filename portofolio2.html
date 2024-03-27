@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portofolio2.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kalnia:wght@400;500&family=Mulish:ital@1&family=PT+Serif&family=Poppins:wght@400;500&family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a href="#" class="logo">Portofolio<span>‹𝟹</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skill">Skill</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="divider"></div>
+    <div class="icon">
+        
+        <a href=""><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+        <a href=""><iconify-icon icon="mdi:telegram"></iconify-icon></a>
+        <a href=""><iconify-icon icon="mdi:gmail"></iconify-icon></a>
+    </div>
+</header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>HALO SEMUA!</h1>
+            <h3>Saya Nazzua Aqillah</h3>
+            <p>Desain portofolio ini sebagai wadah ide saya.</p>
+            <a href="#" class="btn">Hire Me</a>
+            <a href="#" class="btn"><iconify-icon icon="solar:download-linear"></iconify-icon>
+            CV
+            </a>
+        </div>
+        <div class="img-home">
+            <img src="ugii.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading">About Me</h1>
+        <div class="row">
+            <div class="container">
+                    <img src="seul.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam a 
+                        fugiat optio nobis vel. 
+                        <br> Accusamus quam asperiores itaque, unde quae suscipit numquam, lorem 5
+                         <br> mollitia velit, dolore deleniti vitae possimus dolores sunt?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-skill" id="skill">
+        <h1 class="heading-skill"> <span> Skill </span></h1>
+        <div class="skill">
+            <div class="card-skill">
+                <div class="icon-skill"><iconify-icon icon="flowbite:html-solid"></iconify-icon></div>
+                <div class="desc-skill">
+                    <p>Saya baru mengenal HTML ketika memasukin SMK, sehingga saya baru menguasai/mengerti beberapa elemen yang ada di HTML</p>
+                </div>
+            </div>
+            <div class="card-skill">
+                <div class="icon-skill"><iconify-icon icon="flowbite:css-solid"></iconify-icon></div>
+                <div class="desc-skill">
+                    <p>Saya baru mengenal HTML ketika memasukin SMK, sehingga saya baru menguasai/mengerti beberapa elemen yang ada di HTML</2>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="project" id="project">
+        <h1 class="heading">Project</h1>
+       <div class="box-project">
+            <div class="card-project">
+                <div class="in-card">
+                <div class="img-project">
+                    <img src="biru biru.jpeg" alt="">
+                </div>
+                <div class="desc-project">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, similique. Quas nesciunt repellendus architecto voluptas?</p>
+                </div>
+                </div>
+            </div>
+            <div class="card-project">
+                <div class="in-card">
+                <div class="img-project">
+                    <img src="biru biru.jpeg" alt="">
+                </div>
+                <div class="desc-project">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, similique. Quas nesciunt repellendus architecto voluptas?</p>
+                </div>
+                </div>
+            </div>
+            <div class="card-project">
+                <div class="in-card">
+                <div class="img-project">
+                    <img src="biru biru.jpeg" alt="">
+                </div>
+                <div class="desc-project">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, similique. Quas nesciunt repellendus architecto voluptas?</p>
+                </div>
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact</h1>
+        <div class="form-contact">
+            <div class="form-control">
+                <p>Nama</p>
+                <input type="text" id="nama" placeholder="&nbsp;" required/>
+            </div>
+            <div class="form-control">
+                <p>Email</p>
+                <input type="email">
+            </div>
+            <div class="form-control">
+                <p>Number</p>
+                <input type="number">
+            </div>
+            <div class="form-control">
+                <p>Pesan</p>
+                <textarea name="" cols="30" rows="10">
+                </textarea>
+            </div>
+
+            <div class="control" id="submit">
+                <input type="submit" value="Kirim Pesan" onclick="kirimPesan()">
+            </div>
+        </div>
+
+
+    </section>
+    
+   <script>
+    function kirimPesan() {
+        document.getElementById("submit").innerHTML = "Terimakasih Sudah Menghubungi";
+        alert("Pesan Telah Terkirim");
+    }
+    
+
+   </script>
+
+
+
+
+
+
+
+<script src="portofolio2.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

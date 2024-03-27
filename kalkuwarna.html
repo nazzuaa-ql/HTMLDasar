@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+    .calculator {
+        width: 300  px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: purple;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="number"], button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    button {
+        cursor: pointer;
+    }
+    #result {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="calculator">
+    <input type="number" id="num1" placeholder="Masukkan angka pertama" style="color: purple;">
+    <input type="number" id="num2" placeholder="Masukkan angka kedua" style="color: purple;">
+    <button onclick="calculate('+')" style="color: red;">+</button>
+    <button onclick="calculate('-')" style="color: red;;">-</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculate(operator) {
+        var num1 = parseFloat(document.getElementById('num1').value);
+        var num2 = parseFloat(document.getElementById('num2').value);
+        var result;
+        
+        if (operator === '+') {
+            result = num1 + num2;
+        } else if (operator === '-') {
+            result = num1 - num2;
+        }
+        
+        document.getElementById('result').innerText = result;
+
+        // Mengatur latar belakang sesuai dengan sifat angka (ganjil/genap)
+        if (result % 2 === 0) {
+            document.body.style.backgroundColor = 'blue';
+        } else {
+            document.body.style.backgroundColor = 'red';
+        }
+    }
+</script>
+
+</body>
+</html>

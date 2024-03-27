@@ -1,0 +1,374 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+   
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size: 18px;
+    scroll-behavior: smooth;
+    
+}
+
+section{
+    padding: 2rem 9%;
+    background-color: #97AF8F;
+    
+}
+
+header{
+     position: fixed;
+     top: 0; left: 0; right: 0;
+     background-color: #f6f6f6;
+     padding: 16px 60px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     z-index: 1000;
+     box-shadow: 0 .1rem 3rem #2D2727;
+}
+
+header .logo{
+    font-size: 45px;
+    color: #2D2727;
+    font-weight: bolder;
+    padding-right: 72rem;
+}
+
+header .logo span{
+    color: #97AF8F;
+}
+
+
+
+header .navbar a{
+    font-size: 25px;
+    padding: 0 1.5rem;
+    color: #2D2727;
+}
+
+header .navbar a:hover{
+    color: #97AF8F;
+}
+
+header .icon a{
+    font-size: 30px;
+    margin-left: 1.5rem;
+    color: #666;
+}
+
+header .icon a:hover{
+    color: #0C359E;
+}
+
+.divider{
+    width: 2.5px;
+    height: 30px;
+    background-color: #666;
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 80rem;    
+}
+
+.home .content h1{
+    font-size: 6rem;
+    color: #f6f6f6;
+}
+
+.home .content h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+    line-height: 1;
+    color: #2D2727;
+   
+}
+.home .content p{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1;
+    color: hsl(228, 8%, 98%);
+}
+
+.home .content a{
+    color: #FFFFFF;
+}
+
+.home .img-home{
+    padding-left: 30rem;
+}
+
+.img-home img{
+    height: 50rem;
+    padding-top: 7rem;
+    border-radius: 56% 44% 73% 27% / 45% 68% 32% 55%;
+    
+    
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 16px;
+    border-radius: 25px;
+    background: #2D2727;
+    padding: .3rem 2rem;
+    cursor: pointer;
+    font-size: 25px;
+    
+    
+}
+
+
+
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #2D2727;
+    padding: 1rem;
+    margin: 1rem 0;
+    
+}
+
+.about{
+    padding: 30px;
+    padding-top: 10vh;
+    height: 100%;
+    background: #f6f6f6;
+    height: 120vh;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 9rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    border-radius: 90px;
+    background-image:linear-gradient(200deg, rgba(151, 175, 143, 100), rgba(256, 246, 246, 100));
+    width: 100rem;
+    border: 3.5px solid #97AF8F;
+    
+    
+}
+
+.container img{
+    height: 26rem;
+    border-radius: 20rem;
+    filter: drop-shadow(0 0 48px #97AF8F);
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    position: relative;
+    font-size: 2rem;
+    color: #2D2727;
+    padding:16rem 0;
+    padding-top: 16rem;
+    line-height: 1.5;
+    
+}
+
+.container-skill{
+    height: 120vh;
+    padding: 30px;
+    padding-top: 10vh;
+    
+}
+
+.heading-skill{
+        text-align: center;
+        font-size: 4rem;
+        color: #2D2727;
+        padding: 1rem;
+        margin: 2rem 0;
+        
+}
+
+.skill{
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 250px;
+    flex-direction: row;
+}
+
+.card-skill{
+    box-sizing: border-box;
+    box-shadow: 0 .1rem 3rem #2D2727;
+    border-radius: 65% 31% 49% 48% / 44% 61% 36% 52%;
+    background-color: #2D2727;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    padding: 50px;
+    color: hsl(228, 8%, 98%);
+    flex-direction: row;
+    cursor: pointer;
+
+}
+
+.icon-skill{
+    font-size: 150px;
+    filter: drop-shadow(0 0 48px #2D2727);
+    
+}
+
+.desc-skill{
+    font-size: 37px;
+}
+
+.card-skill:hover{
+    color: #97AF8F;
+}
+
+.project{
+    height: 120vh;
+    padding: 100px 30px;
+    background-color: #f6f6f6;
+
+}
+
+.box-project{
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    flex-direction: row;
+}
+
+.card-project{
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 4px solid #97AF8F;
+    width: max-content;
+    text-align: center;
+    padding: 30px;
+    align-items: center;
+    color: #2D2727;
+    flex-direction: row;
+    
+    
+}
+
+.card-project .in-card{
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-image:linear-gradient(2deg, rgba(151, 175, 143, 100), rgba(256, 246, 246, 100));
+    width: 100rem;
+    width: 600px;
+    height: 580px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.img-project img{
+    height: 280px;
+    border-radius: 30px;
+    filter: drop-shadow(0 0 48px #97AF8F);
+}
+
+.desc-project p{
+    padding: 30px;
+    font-size: 27px;
+    
+}
+
+.contact{
+    
+    padding: 30px 40px;
+    height: 95vh;
+    
+}
+
+.contact .form-contact{
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    width: 65rem;
+    color: #2D2727;
+    padding: 40px 40px;
+    line-height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 27px;
+}
+
+.form-control .type{
+    padding-right: 200px;
+}
+
+.contact .form-control input{
+    width: 60rem;
+    height: 4.7rem;
+    background: #f6f6f6;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    
+    
+}
+
+.contact .control input{
+    width: 60rem;
+    height: 4.7rem;
+    background: #2D2727;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #f6f6f6;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.contact .control input:hover{
+    background: transparent;
+    border: 3.5px solid #2D2727;
+}
+
+.contact .form-control textarea{
+    width: 60rem;
+    height: 8rem;
+    background: #f6f6f6;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+input:not(:placeholder-shown){
+    font-size: 25px;
+    padding-left: 20px;
+}
+textarea:not(:placeholder-shown){
+    font-size: 25px;
+    padding-left: 20px;
+}
+
